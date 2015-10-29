@@ -3,7 +3,8 @@ repository routine for laravel 5
 
 # example
 
-'''interface ProfileInterface
+```
+interface ProfileInterface
 {
 
     public function find($id, $columns = array('*'));
@@ -16,9 +17,11 @@ repository routine for laravel 5
     
     public function delete($id);
 
-}'''
+}
+```
 
-'''class ProfileRepository extends EasyRepository implements ProfileInterface {
+```
+class ProfileRepository extends EasyRepository implements ProfileInterface {
 
     use RepositoryFind, RepositoryFindBy, RepositoryUpdate, RepositoryDelete;
 
@@ -33,4 +36,5 @@ repository routine for laravel 5
         return \App\Domain\Profile\Profile::class;
     }
 
-}'''
+}
+```
