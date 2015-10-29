@@ -3,7 +3,7 @@ repository routine for laravel 5
 
 # example
 
-```
+```php
 interface ProfileInterface
 {
 
@@ -20,7 +20,7 @@ interface ProfileInterface
 }
 ```
 
-```
+```php
 class ProfileRepository extends EasyRepository implements ProfileInterface {
 
     use RepositoryFind, RepositoryFindBy, RepositoryUpdate, RepositoryDelete;
